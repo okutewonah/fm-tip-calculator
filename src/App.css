@@ -23,5 +23,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+}
+header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+main {
+  width: 600px;
+  height: 350px;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.bill-content {
+  height: 315px;
+  width: 280px;
+}
+.result-content {
+  height: 315px;
+  width: 280px;
+  background-color: var(--very-dark-cyan);
 }

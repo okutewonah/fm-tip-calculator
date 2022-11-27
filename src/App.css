@@ -44,8 +44,9 @@ main {
   color: var(--dark-grayish-cyan);
   padding: 0 1rem;
 }
-.bill-content h1 {
-  font-size: 12px;
+h1,
+h2 {
+  font-size: .8rem;
 }
 .bill-input {
   /* width: 100%; */
@@ -66,12 +67,6 @@ main {
   color: var(--very-dark-cyan);
   font-size: 18px;
   text-align: right;
-}
-.bill[data-icon="dollar-sign"]::before {
-  content: "";
-  background-image: url('./assets/images/icon-dollar.svg');
-  width: 11px;
-  height: 17px;
 }
 .result-content {
   height: 315px;

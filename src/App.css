@@ -13,20 +13,68 @@
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
 }
-* {
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
   box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
 }
 
 body {
   font-family: 'Space Mono', monospace;
   background-color: var(--light-grayish-cyan);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+  display: grid;
+  place-content: center;
 }
 header {
-  text-align: center;
+  display: grid;
+  place-content: center;
   margin-bottom: 5rem;
 }
 main {
@@ -48,12 +96,11 @@ h1,
 h2 {
   font-size: .8rem;
 }
-.bill-input {
-  /* width: 100%; */
-  position: relative;
+input {
+  text-align: right;
+  font-family: 'Space Mono', monospace;
 }
 .bill {
-  font-family: 'Space Mono', monospace;
   background-image: url('./assets/images/icon-dollar.svg');
   background-position: left;
   background-position-x: .5rem;
@@ -65,8 +112,7 @@ h2 {
   border: none;
   border-radius: 5px;
   color: var(--very-dark-cyan);
-  font-size: 18px;
-  text-align: right;
+  font-size: 18px;  
 }
 .result-content {
   height: 315px;

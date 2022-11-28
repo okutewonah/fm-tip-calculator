@@ -18,7 +18,17 @@ const Bill = () => {
         <button>50%</button>
         <input type='number' className='custom' placeholder='Custom' />
       </div>
-      {/* Tip Selection */}
+      {/* End Tip Selection */}
+
+      {/* People */}
+      <div className='people'>
+        <div className='people__heading'>
+          <h2>Number of People</h2>
+          <h2 className='error'>Can't be zero</h2>
+        </div>
+        <input type='number' className='people__field' placeholder='0' /> 
+      </div>
+      {/* End People */}
 
     </div>
   )

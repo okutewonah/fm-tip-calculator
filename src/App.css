@@ -114,6 +114,12 @@ input {
   color: var(--very-dark-cyan);
   font-size: 18px;  
 }
+.bill-input {
+  margin-bottom: 1.5rem;
+}
+h2 {
+  margin: 1rem 0;
+}
 .tips {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -130,6 +136,27 @@ input {
   color: var(--white);
   border-radius: 5px;
   border: none;
+}
+.people {
+  margin: 1rem 0;
+}
+.people__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.people__field {
+  background-image: url('./assets/images/icon-person.svg');
+  background-position: left;
+  background-position-x: .5rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 32px;
+  padding: 1rem;
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--very-dark-cyan);
+  font-size: 18px;
 }
 button {
   font-size: 18px;

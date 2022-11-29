@@ -167,7 +167,11 @@ button {
   height: 315px;
   width: 280px;
   background-color: var(--very-dark-cyan);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 
 /* Chrome, Safari, Edge, Opera */

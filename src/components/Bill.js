@@ -4,6 +4,7 @@ const Bill = () => {
 
   const [tip, setTip] = useState(0);
   const [bill, setBill] = useState(0);
+  const [people, setPeople] = useState(0)
 
   return (
     <div className='bill-content'>

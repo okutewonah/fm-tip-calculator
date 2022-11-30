@@ -170,9 +170,20 @@ button {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  color: var(--white);
 }
-
-
+.tip__amount {
+  display: flex;
+  justify-content: space-between;
+}
+.tip__text h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+h3 {
+  font-size: .75rem;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

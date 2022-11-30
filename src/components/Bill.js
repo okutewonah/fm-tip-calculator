@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Bill = () => {
+
+  const [tip, setTip] = useState(0);
+  const [bill, setBill] = useState(0);
+
   return (
     <div className='bill-content'>
       <h1>Bill</h1>

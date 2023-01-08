@@ -6,22 +6,26 @@ const Bill = () => {
   const [bill, setBill] = useState(0);
   const [people, setPeople] = useState(0)
 
+  const tipCalculation = (b, t, p) => {
+    
+  }
+
   return (
     <div className='bill-content'>
       <h1>Bill</h1>
       <div className='bill-input'>
-        <input type='number' id='bill' className='bill' placeholder='0' />
+        <input onChange={(e) => setBill(e.target.value)} type='number' id='bill' className='bill' placeholder='0' />
       </div>
 
       {/* Tip Selection */}
       <h2>Select Tip %</h2>
       <div className='tips'>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <input type='number' className='custom' placeholder='Custom' />
+        <button onClick={() => setTip(5)}>5%</button>
+        <button onClick={() => setTip(10)}>10%</button>
+        <button onClick={() => setTip(15)}>15%</button>
+        <button onClick={() => setTip(25)}>25%</button>
+        <button onClick={() => setTip(50)}>50%</button>
+        <input onChange={(e) => setTip(e.target.value)} type='number' className='custom' placeholder='Custom' />
       </div>
       {/* End Tip Selection */}
 
